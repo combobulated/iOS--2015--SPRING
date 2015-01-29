@@ -12,5 +12,5 @@ You're all on your way to being iOS developers!
 
 ###### Ben | [jgohlke.com](http://www.jgohlke.com)
 
-Twitter: [@akhenaten](http://www.twitter.com/akhenaten)
-Github: [@jcgohlke](http://wwww.github.com/jcgohlke)
+* Twitter: [@akhenaten](http://www.twitter.com/akhenaten)
+* Github: [@jcgohlke](http://wwww.github.com/jcgohlke)
