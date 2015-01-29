@@ -9,3 +9,8 @@ You will notice a homework directory in this repository. This is where all homew
 Feel free to reach out to me on HipChat once the class starts with any questions you may have. You will also use HipChat to converse and get help from your classmates. We'll get all that set up on the first day of class.
 
 You're all on your way to being iOS developers!
+
+###### Ben | [jgohlke.com](http://www.jgohlke.com)
+
+Twitter: [@akhenaten](http://www.twitter.com/akhenaten)
+Github: [@jcgohlke](http://wwww.github.com/jcgohlke)
