@@ -6,6 +6,8 @@ Good afternoon agent. This mission will be quite taxing, but you will make your 
 
 Included with this brief is a zipped file containing the agency's efforts so far regarding this mission. It is a good start, but several key issues have not yet been solved. Your mission, should you choose to accept it, is to finish the tasks outlined in the attached source code and deliver the project for submission to all our field agents. Good luck.
 
+This message will self-destruct in 5 seconds.
+
 ### Steps to Success
 
 #### Storyboard Tasks
@@ -26,5 +28,3 @@ Included with this brief is a zipped file containing the agency's efforts so far
 * [ ] The mission briefing should display the information from MissionBriefing.txt (copy-paste, you don't have to read from the file). It also contains a placeholder for the agent's last name (#4 in comments).
 * [ ] The background color of the view should change to green on successful authentication of the agent (#5 in comments).
 * [ ] The background color of the view should change to red to indicate a failed login of the agent (#6 in comments).
-
-This message will self-destruct in 5 seconds.
