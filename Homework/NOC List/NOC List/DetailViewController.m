@@ -11,13 +11,13 @@
 @interface DetailViewController ()
 
 //
-// 16. By the empty circle to the left of this IBOutlet, it looks like this property is not connected to its storyboard
-//    object. How do we do that?
+// 17. By the empty circle to the left of this IBOutlet, it looks like this property is not connected to its storyboard
+//     object. How do we do that?
 //
 @property (weak, nonatomic) IBOutlet UILabel *coverNameLabel;
 
 //
-// 17. We need properties for the other two labels here so we can reference them in code.
+// 18. We need properties for the other two labels here so we can reference them in code.
 //
 
 // Why is this here?
@@ -46,7 +46,7 @@
     if (self.agent)
     {
         //
-        // 18. We need to set the title of this view to "Agent #", where # is the agent's last name (use the cover name). But
+        // 19. We need to set the title of this view to "Agent #", where # is the agent's last name (use the cover name). But
         //     the Agent object only has a name property with the first and last name in a single string. How do we get just
         //     the last name?
         //
@@ -56,17 +56,17 @@
         
         
         //
-        // 19. Once we have the last name of the agent from the code above, how do we set the view's title to the right
-        //    string?
+        // 20. Once we have the last name of the agent from the code above, how do we set the view's title to the right
+        //     string?
         //
         
         
         
         //
-        // 20. We need to set the three labels in our view to the agent's cover name, real name, and access label.
+        // 21. We need to set the three labels in our view to the agent's cover name, real name, and access label.
         //
-        //    The level label will be a little trickier, because the level property is an NSInteger. We also want that label
-        //    to read "Level #". How do we do that?
+        //     The level label will be a little trickier, because the level property is an NSInteger. We also want that label
+        //     to read "Level #". How do we do that?
         //
 
         
@@ -81,8 +81,8 @@
     [super viewDidLoad];
     
     //
-    // 21. We need to make sure to call the configureView method so the detail view will be populated with the agent's data.
-    //    How do we do that?
+    // 22. We need to make sure to call the configureView method so the detail view will be populated with the agent's data.
+    //     How do we do that?
     //
     
     

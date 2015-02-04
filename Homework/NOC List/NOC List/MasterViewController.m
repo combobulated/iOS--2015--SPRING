@@ -76,24 +76,27 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    //
+    // 8. We need to set the segue identifier to the same one we used in the segue on the storyboard
+    //
     if ([[segue identifier] isEqualToString:@""])
     {
         //
-        // 8. We need to get an NSIndexPath for the selected cell
+        // 9. We need to get an NSIndexPath for the selected cell
         //
         NSIndexPath *indexPath = nil;
         
         //
-        // 9. Now we're going to use the "row" property of the indexPath from above to pull out the associated Agent object
-        //    from the agents array.
+        // 10. Now we're going to use the "row" property of the indexPath from above to pull out the associated Agent object
+        //     from the agents array.
         //
         Agent *selectedAgent = self.agents[0];
         
         //
-        // 10. Now we need to send this Agent object to the detail view controller so it know's which agent's info to show.
-        //    See the method call below on the segue object for how to get a handle to the detail view controller.
+        // 11. Now we need to send this Agent object to the detail view controller so it know's which agent's info to show.
+        //     See the method call below on the segue object for how to get a handle to the detail view controller.
         //
-        //    How would we go about setting this agent object?
+        //     How would we go about setting this agent object?
         //
         
 //        [segue destinationViewController];
@@ -110,7 +113,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     //
-    // 11. How do we tell the table view how many rows we need?
+    // 12. How do we tell the table view how many rows we need?
     //
     
     return 0;
@@ -119,27 +122,27 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //
-    // 12. We need the tableview to dequeue a cell for us to use. This will either pull an unused cell and give it to us to
-    //    reuse, or it will create a brand new cell. In either case, we need to make sure to set/reset all the UI elements so
-    //    we don't show stale data.
+    // 13. We need the tableview to dequeue a cell for us to use. This will either pull an unused cell and give it to us to
+    //     reuse, or it will create a brand new cell. In either case, we need to make sure to set/reset all the UI elements
+    //     so we don't show stale data.
     //
-    //    The method call below will perform this dequeuing operation. What should we set as the identifier?
+    //     The method call below will perform this dequeuing operation. What should we set as the identifier?
     //
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"" forIndexPath:indexPath];
 
     //
-    // 13. We need to get a handle to the appropriate Agent object. How do we do that? (hint: we've done this already ^)
+    // 14. We need to get a handle to the appropriate Agent object. How do we do that? (hint: we've done this already ^)
     //
     Agent *anAgent = nil;
     
     //
-    // 14. The cell needs to show both the cover name and the real name of the agent. Since we are using one of the built-in
-    //    cell types, the "cell" object above has properties for these two labels already. How do we assign those?
+    // 15. The cell needs to show both the cover name and the real name of the agent. Since we are using one of the built-in
+    //     cell types, the "cell" object above has properties for these two labels already. How do we assign those?
     //
 
     
     //
-    // 15. This method is supposed to give a cell back to its caller. How do we do that? Why is this method currently
+    // 16. This method is supposed to give a cell back to its caller. How do we do that? Why is this method currently
     //     throwing an error?
     //
     
