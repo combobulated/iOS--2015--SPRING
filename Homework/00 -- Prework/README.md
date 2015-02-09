@@ -12,9 +12,6 @@ As your first assignment, [create a new Issue in the class repo](https://github.
 * [ ] Read the `README.md` file in [Assignments](https://github.com/TheIronYard--Orlando/iOS--2015--SPRING/tree/master/Homework)
 * [ ] [Complete the "Hello World" Github guide](https://guides.github.com/activities/hello-world/)
     * [ ] Add a link to your new Github repo as a comment in your WIP Issue.
-
-* NOTE: The above looks like a lot, but those tasks go quickly. The following items require, and deserve, more time. Don't put them off!    
-
 * [ ] Read and complete the exercises for the [Command Line Crash Course](http://cli.learncodethehardway.org/book/). The command line is another name for the terminal. There are about 20 commands you'll use all the time on the command line, and it's helpful to have them memorized so we can use them right away.    
 * [ ] Close this issue! You're done!
 
