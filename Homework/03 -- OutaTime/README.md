@@ -10,7 +10,7 @@ Time is factor here. We've only got 24 hours until lightning is due to strike th
 
 This is heavy.
 
-- Doc Brown
+\- Doc Brown
 
 ### Steps to Success
 
