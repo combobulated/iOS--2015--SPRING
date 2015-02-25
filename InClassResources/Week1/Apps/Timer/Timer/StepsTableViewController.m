@@ -53,7 +53,16 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StepCell" forIndexPath:indexPath];
     
+    NSDate *aDate = [steps objectAtIndex:indexPath.row];
     
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row + 1];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    NSString *formattedDate = [dateFormatter stringFromDate:aDate];
+    
+    cell.detailTextLabel.text = formattedDate;
     
     return cell;
 }
@@ -72,7 +81,13 @@
 
 - (IBAction)addStep:(UIBarButtonItem *)sender
 {
+    NSDate *date = [NSDate date];
+    [steps addObject:date];
+    NSInteger row = [steps indexOfObject:date];
     
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+    
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 @end
