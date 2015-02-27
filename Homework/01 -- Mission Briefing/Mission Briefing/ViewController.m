@@ -31,8 +31,14 @@
     //
     
 //    [self.agentNameTextField setText:];
+    [self.agentNameTextField setText:@""];
+    
 //    self.greetingLabel.text = ;
+    self.greetingLabel.text=@"";
+    
 //    self.missionBriefingTextView.text = ;
+    self.missionBriefingTextView.text = @"";
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +58,10 @@
     //
     // 2. Check whether there is text in BOTH the name and password textfields
     //
-    if (YES && YES)
+    
+    
+    
+    if ( ![self.agentNameTextField.text isEqualToString:@""] && ![self.agentPasswordTextField.text isEqualToString:@""]  )
     {
         //
         // 3. The greetingLabel needs to be populated with the the string "Good evening, Agent #", where # is the last name of
@@ -62,9 +71,9 @@
         //    the delimiter would be a space character.
         //
         
-        NSString *agentName = self.agentNameTextField.text;
+        NSString *agentName = [self.agentNameTextField.text componentsSeparatedByString:@" "][1];
         // Additional step(s) to remove only the last name
-        self.greetingLabel.text = @"?";
+        self.greetingLabel.text = [NSString stringWithFormat:@"Good Evening Agent %@", agentName];
         
         //
         // 4. The mission briefing textview needs to be populated with the briefing from HQ, but it must also include the last
@@ -75,7 +84,7 @@
         //    Set the textview text property to the paragraph in "MissionBriefing.txt"
         //
         
-        self.missionBriefingTextView.text = @"?";
+        self.missionBriefingTextView.text = [NSString stringWithFormat:@"This mission will be an arduous one, fraught with peril. You will cover much strange and unfamiliar territory. Should you choose to accept this mission, Agent %@, you will certainly be disavowed, but you will be doing your country a great service. This message will self destruct in 5 seconds.", agentName];
         
         //
         // 5. The view's background color needs to switch to green to indicate a successful login by the agent.
